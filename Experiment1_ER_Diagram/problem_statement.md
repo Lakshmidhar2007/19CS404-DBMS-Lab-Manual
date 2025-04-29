@@ -37,7 +37,7 @@ Design a database for patient management, appointments, medical records, and bil
 
 ## 📝 Tasks:
 1. Identify entities, relationships, and attributes.
-2. Draw the ER diagram using any tool (draw.io, dbdiagram.io, hand-drawn and scanned).
+2. Draw the ER diagram using any tool (draw.io, db diagram.io, hand-drawn and scanned).
 3. Include:
    - Cardinality & participation constraints
    - Prerequisites for University OR Billing for Hospital
@@ -45,28 +45,91 @@ Design a database for patient management, appointments, medical records, and bil
    - Why you chose the entities and relationships.
    - How you modeled prerequisites or billing.
 
-# ER Diagram Submission - Student Name
+# ER Diagram Submission - LAKSHMIDHAR N - (212224230138)
 
 ## Scenario Chosen:
-University / Hospital (choose one)
+ __University__
 
 ## ER Diagram:
 ![ER Diagram](er_diagram.png)
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+#### 1. DEPARTMENT: 
+Department ID, Department Name
+
+#### 2. PROGRAM: 
+Program ID, Program Name, Governing Department
+
+#### 3. STUDENT: 
+Admission Number, Name, Email ID, Phone Number, Date of Birth, Age
+
+#### 4. COURSES: 
+Course ID, Course Name, Credits, Prerequisites
+
+#### 5. INSTRUCTOR: 
+Staff ID, Name, Email ID, Phone Number, Date of Birth
 ...
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
+#### 1. DEPARTMENT offers PROGRAM
+
+* __Cardinality__: One-to-Many
+
+* __Participation__: Total (each program belongs to exactly one department)
+
+#### 2. PROGRAM enrolls STUDENT
+
+* __Cardinality__: Many-to-Many
+
+* __Participation__: Partial (a student can be enrolled in multiple programs, but not every student belongs to a program)
+
+#### 3. COURSES catalog PROGRAM
+
+* __Cardinality__: Many-to-One
+
+* __Participation__: Total (every course must be associated with a program)
+
+#### 4. STUDENT registers for COURSES
+
+* __Cardinality__: Many-to-Many
+
+* __Participation__: Partial
+
+#### 5. INSTRUCTOR teaches COURSES
+
+* __Cardinality__: Many-to-Many
+
+* __Participation__: Partial
+
+#### 6. COURSES have prerequisites
+
+* __Cardinality__: Many-to-Many
+
+* __Participation__: Partial
 ...
 
-## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
+## Extension (Prerequisite):
+ * Prerequisites are represented as a self-referencing many-to-many relationship on the COURSES entity. This allows the flexibility to:
+
+   * Define multiple prerequisites for a single course.
+
+   * Assign a single course as a prerequisite to multiple other courses.
+
 
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
+1. __Entity Selection__: The entities were chosen to mirror the key components of an academic institution—departments, programs, students, courses, and instructors—to ensure a comprehensive database structure.
+
+2. __Relationships__: The relationships were established to represent real-world interactions effectively, like enrollment, teaching, and course prerequisites.
+
+3. __Assumptions__: To maintain consistency:
+
+   * Each program belongs to one department.
+
+   * Each course must belong to a program.
+
+   * Instructors may teach multiple courses and vice versa.
+
+* These design decisions ensure the database is both scalable and adheres to academic institution requirements.
 
 ## RESULT
+Thus, to understand and apply the concepts of ER modeling by creating an ER diagram for a real-world application has been done successfully.
