@@ -33,7 +33,7 @@ END;
 - Declare two numeric variables and initialize them.
 - Use an `IF` statement to compare the values.
 - Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
-#### PROGRAM:
+#### PL/SQL QUERY:
 ```SQL
 DECLARE
    num1 NUMBER := 80;
@@ -64,7 +64,7 @@ Greater number is: 80
 - Initialize a `sum` variable to 0.
 - Use a `WHILE` loop to iterate from 1 to `n`, adding each number to the sum.
 - Display the result using `DBMS_OUTPUT.PUT_LINE`.
-#### PROGRAM
+#### PL/SQL QUERY
 ``` SQL
 DECLARE
    n NUMBER := 10;
@@ -97,7 +97,7 @@ Sum of first 10 natural numbers is: 55
 - Use a loop to generate the next terms using the formula `c = a + b`.
 - Print each term in the series.
 
-#### PROGRAM
+#### PL/SQL QUERY
 ``` SQL
 DECLARE
    n NUMBER := 7;
@@ -139,7 +139,7 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 - Use a loop to extract each digit using modulo and reverse the number.
 - Display the reversed number.
 
-#### PROGRAM
+#### PL/SQL QUERY
 ```SQL
 DECLARE
    n NUMBER := 1535;
@@ -175,7 +175,7 @@ Reversed number is 5351
 - Use nested `IF-ELSIF-ELSE` conditions to find the largest among the three.
 - Display the largest number.
 
-#### PROGRAM
+#### PL/SQL QUERY
 ``` SQL
 DECLARE
    a NUMBER := 10;

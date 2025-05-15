@@ -81,6 +81,7 @@ The program should display the employee details or an error message.
 
 ---
 
+
 ### **Question 2: Parameterized Cursor with Exception Handling**
 
 **Write a PL/SQL program using a parameterized cursor to retrieve and display employees with a salary in a given range. Implement exception handling for the following errors:**
