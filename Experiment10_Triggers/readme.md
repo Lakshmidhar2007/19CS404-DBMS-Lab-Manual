@@ -154,8 +154,10 @@ SELECT product_id, name, created_at, last_modified FROM products;
 
 ### Output Got:
 * __Before Updating the record__
+
 ![OUTPUT](./image-6.png)
 * __After Updating the record__
+
 ![alt text](image-5.png)
 ---
 
@@ -206,9 +208,11 @@ SELECT * FROM audit_log;
 
 ### Output Got:
 * __First Update__
+
 ![alt text](image-2.png)
 
 * __Second Update__
+
 ![alt text](image-3.png)
 ---
 
